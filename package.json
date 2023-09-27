@@ -1,6 +1,6 @@
 {
   "name": "doggy-care-react",
-  "private": false,
+  "private": true,
   "homepage": "https://github.com/markopaunovic1/Dog-Daycare-React",
   "version": "0.0.0",
   "type": "module",
