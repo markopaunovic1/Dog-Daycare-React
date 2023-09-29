@@ -142,7 +142,17 @@ body {
 }
 
 .dogItem {
+    display: flex;
     border: 1px solid blue;
     cursor: pointer;
+    align-items: center;
+}
+
+.all-dogs-image {
+    display: block;
+    float: left;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
 }
 }
