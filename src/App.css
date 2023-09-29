@@ -135,5 +135,14 @@ body {
 	top:1px;
 }
 
+.list-of-dogs {
+    border: 1px solid black;
+    width: fit-content;
+    padding: 10px;
+}
 
+.dogItem {
+    border: 1px solid blue;
+    cursor: pointer;
+}
 }

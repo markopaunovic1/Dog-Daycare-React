@@ -12,13 +12,13 @@ const Navbar = () => {
             <div className='Navbar-header'>
                 <ul>
                 <li>
-                    <Link to="/Welcome"><img src='https://cdn.pixabay.com/photo/2012/04/25/00/43/dog-41431_960_720.png' width={80} height={80} className='nav-logo'/></Link>
+                    <Link to="/"><img src='https://cdn.pixabay.com/photo/2012/04/25/00/43/dog-41431_960_720.png' width={80} height={80} className='nav-logo'/></Link>
                 </li>
-
                 </ul>
+
                 <ul>
                 <li>
-                    <Link to="/Welcome">Home page</Link>
+                    <Link to="/">Home page</Link>
                 </li>
                 <li>
                     <Link to="/Catalog">Dog Catalog</Link>
@@ -29,8 +29,8 @@ const Navbar = () => {
                 </ul>
             </div>
         <Routes>
-                <Route exact path='/Welcome' element={< Welcome />}></Route>
-                <Route exact path='/Welcome' element={< Welcome />}></Route>
+                <Route exact path='/' element={< Welcome />}></Route>
+                <Route exact path='/' element={< Welcome />}></Route>
                 <Route exact path='/Catalog' element={< Catalog />}></Route>
                 <Route exact path='/DogInfo' element={< DogInfo />}></Route>
         </Routes>
