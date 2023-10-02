@@ -1,5 +1,5 @@
 import { useState ,useEffect, createElement } from "react"
-import { json } from "react-router-dom";
+import { Link, json, useParams } from "react-router-dom";
 
 const URL = 'https://api.jsonbin.io/v3/b/650a7ebece39bb6dce7f5683';
 
@@ -31,24 +31,19 @@ const Catalog = (props) => {
         console.log(elements.dogsData);
     }, [dogs]);
     
-/* const showDogImage = () => {
-    const dogImage = dogs.map((dogsData) => (<div>{dogsData.img}</div>))
-    console.log(dogImage)
-    return(
-        <img>{dogImage}</img>
-    )
-} */
-
-const selectedDogs = (event, index) => {
-    const dogpic = document.createElement('img');
-}
+    const passDogData = () => {
+        const { handle} = useParams();
+        const [dog, setDog] = useState(null);
+    }
 
     return (
         <div>
             <section className="catalog">
-                <h1 className="Catalog-title">Registered Dogs:</h1>
                     <ul className="list-of-dogs">
+                    <h1 className="Catalog-title">Registered Dogs:</h1>
+                        <Link to={"/DogInfo"}>
                         <p>{dogElements}</p>
+                        </Link>
                         {/* {dogs.map((image, index) => 
                         <img key={index} src={image.img} alt={'Image ${index'}></img>)} */}
                         {/* <ul>{showDogImage}</ul> */}
