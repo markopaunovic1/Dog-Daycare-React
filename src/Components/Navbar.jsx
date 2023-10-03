@@ -24,7 +24,7 @@ const Navbar = () => {
                     <Link to="/Catalog">Dog Catalog</Link>
                 </li>
                 <li>
-                    <Link to="/DogInfo">Dog Info</Link>
+                    <Link to="/DogInfo/:id">Dog Info</Link>
                 </li>
                 </ul>
             </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
                 <Route exact path='/' element={< Welcome />}></Route>
                 <Route exact path='/' element={< Welcome />}></Route>
                 <Route exact path='/Catalog' element={< Catalog />}></Route>
-                <Route exact path='/DogInfo' element={< DogInfo />}></Route>
+                <Route exact path="/DogInfo/:id" element={< DogInfo />}></Route>
         </Routes>
         </div>
     </Router>
