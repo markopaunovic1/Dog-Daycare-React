@@ -23,9 +23,6 @@ const Navbar = () => {
                 <li>
                     <Link to="/Catalog">Dog Catalog</Link>
                 </li>
-                <li>
-                    <Link to="/DogInfo/:id">Dog Info</Link>
-                </li>
                 </ul>
             </div>
         <Routes>

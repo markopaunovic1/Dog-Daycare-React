@@ -8,7 +8,6 @@ const URL = 'https://api.jsonbin.io/v3/b/65112e6654105e766fb95cc8';
 const DogInfo = () => {
     const params = useParams();
     const currentDog = params.id;
-
     const [dog, setDog] = useState([]);
 
     useEffect(() => {

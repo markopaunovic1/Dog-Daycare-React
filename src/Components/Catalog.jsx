@@ -39,7 +39,6 @@ const Catalog = (props) => {
     const eachDog = dogs.present;
     console.log("each dog:", eachDog);
 
-
     return (
         <div>
             <section className="catalog">
